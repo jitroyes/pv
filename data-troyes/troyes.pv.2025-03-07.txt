@@ -1,0 +1,125 @@
+1 00c eau
+POINT D’INFORMATION SUR LES ORIENTATIONS BUDGETAIRES 2025 DU SERVICE DES EAUX - COPE TERRITOIRE TROYES
+
+16 01 parking commission?
+DESIGNATIONS DE REPRESENTANTS DE LA VILLE DE TROYES
+1/ Société Publique Locale Troyes Parc Auto
+2/ Commissions sectorielles
+
+24 02 musées
+PÔLE MUSEAL
+Acceptation de depôts et dons d’œuvres au profit des musees municipaux
+
+55 3 conservatoire
+CONSERVATOIRE A RAYONNEMENT DEPARTEMENTAL MARCEL LANDOWSKI PARTENARIATS 2024/2025
+1/ Fondation blue lake fine arts camp
+2/ Troyes champagne metropole
+3/ Ville de strasbourg
+
+72 4 tourisme
+CITY PASS 2025
+Convention de partenariat avec troyes la champagne tourisme
+
+77 5 rapport
+RAPPORT SUR LA SITUATION DE LA COLLECTIVITE AU REGARD DU DEVELOPPEMENT DURABLE AU TITRE DE L’ANNEE 2024
+
+151 6 budget
+EXERCICE 2025 RAPPORT SUR LES ORIENTATIONS BUDGETAIRES
+- Rapport de présentation pour le débat d’orientation budgétaire
+- Personnel communal : Présentation de la structure et de l’évolution des dépenses et des effectifs
+- Rapport d’information sur la situation en matière d’égalité femmes-hommes sur le territoire communal pour l’année 2023
+
+233 7 énergie
+ATTRIBUTION DE SUBVENTIONS D’EQUIPEMENT AU S.D.E.A.
+// Syndicat Départemental d’Energie de l’Aube (S.D.E.A.)
+
+236 8 budget
+DEMANDES DE FINANCEMENTS ET DE PLANS DE FINANCEMENT, APPROBATION DE CONVENTIONS AVEC LES PARTENAIRES FINANCEURS
+
+265 9 budget?
+CESSION DE PARTS SOCIALES
+
+267 10 train
+TRAVAUX D’ELECTRIFICATION DE LA LIGNE PARIS-TROYES CONVENTION RELATIVE AU FINANCEMENT DES TRAVAUX DE LA PHASE 2
+SECTION : NOGENT SUR SEINE / TROYES
+Tranche 2 : Travaux principaux
+
+364 11 Police
+INDEMNISATIONS DE TIERS ET REMBOURSEMENTS
+
+371 12 terrain JulesGuesde
+SERVITUDES
+
+382 13 forêt
+ETAT D’ASSIETTE 2025 FORÊT COMMUNALE DE SERVIGNY
+
+386 14 habitats?
+SECTEUR SAUVEGARDE
+Subventions pour restaurations immobilieres - Programme 2025
+
+388 15 habitats?
+OUVERTURE DE LA CONCERTATION PREALABLE RELATIVE A LA RELANCE D’UNE OPERATION DE RESTAURATION IMMOBILIERE (ORI) DANS LE BOUCHON DE CHAMPAGNE
+
+391 16 habitat? PLU
+COMPETENCE EN MATIERE DE « PLAN LOCAL D’URBANISME (PLU), DE DOCUMENT D’URBANISME EN TENANT LIEU OU DE CARTE COMMUNALE »
+poursuite des procedures de modification engagees par la ville de troyes
+
+394 17 animation
+PARC DES MOULINS ET MAISON DES MARAÎCHERS
+Évenements et animations 2025
+
+399 18 animation
+CONCOURS DES MAISONS ET DE L’HABITAT FLEURIS DE LA VILLE DE TROYES 2025
+
+406 19 police
+CREATION D’UNE BRIGADE CYNOPHILE AU SEIN DE LA POLICE MUNICIPALE
+
+401 20 police_sur_famille?
+CONSEIL POUR LES DROITS ET DEVOIRS DES FAMILLES (C.D.D.F.)
+Modification de la composition
+
+414 21 fournisseur
+GROUPEMENTS DE COMMANDES
+constitution et avenants
+
+415 22 écoleInt(uniforme) écoleInt(mobilier) netoyage+insertion
+MARCHES PUBLICS FORMALISES
+Autorisation prealable de lancement de consultations
+
+460 23 fournisseur(géomètre)
+APPEL D’OFFRES OUVERT
+Attribution et signature
+
+465 24 fournisseur(chauffage) fournisseur(assurence) fournisseur(construction+sport) fournisseur(netoyage) founisseur(vidéosurveillance,éclairage...) fournissuer(construction+écoleInt) fournisseur(sécuIncendie)
+MARCHES PUBLICS FORMALISES
+Avenants
+
+612 25 sport
+MANIFESTATIONS SPORTIVES
+Reglement du semi-marathon
+edition 2025
+
+612 26 don
+SOLIDARITE AVEC LA POPULATION DE MAYOTTE
+
+628 27 construction eauPLuviale
+CONVENTION DE MANDAT DE MAÎTRISE D’OUVRAGE AVEC TROYES CHAMPAGNE METROPOLE POUR LA REALISATION D’OUVRAGES D’EAUX PLUVIALES
+
+644 28 sport commerce
+VIE ASSOCIATIVE LOCALE
+A/ SPORTS
+I- Annulation de subventions spécifiques
+1- Entente Troyes Aube Champagne Handball
+2- Air Campus Troyes
+II- Réduction d’une subvention spécifique
+- Troyes Gymnique
+B/ COMMERCE
+Attribution d’une subvention spécifique
+- Association Les Vitrines de Troyes La Champagne
+
+650 29 personnel
+PERSONNEL MUNICIPAL
+Mesures diverses
+
+676 30 fournisseur
+COMPTE RENDU DES DECISIONS ET MARCHES PUBLICS PASSES EN PROCEDURE ADAPTEE
