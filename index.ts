@@ -1,5 +1,6 @@
 #!/usr/bin/env -S deno run --allow-write=public --allow-read=.
 
+import * as CSV from "https://jsr.io/@std/csv/1.0.6/mod.ts";
 import { walk, WalkOptions } from "https://jsr.io/@std/fs/1.0.19/walk.ts";
 import { CHILDREN, html, minify } from "./html.ts";
 
@@ -61,6 +62,8 @@ async function writeIndex() {
 async function dataDir(dir: string, files?: string[]) {
 	files ||= await walkName(dir, { exts: [".txt"] });
 
+	const csvData: CSV.DataItem[] = [];
+
 	const title = dir.replace("data-", "PV de: ");
 	await Deno.writeTextFile(
 		`public/${dir}.html`,
@@ -73,6 +76,8 @@ async function dataDir(dir: string, files?: string[]) {
 				html(
 					"main",
 					html("a href=.", "Tous les dossiers"),
+					" ",
+					html(`a href=${dir}.csv`, "CSV"),
 					html(
 						"ul.toc",
 						"Sommaire",
@@ -81,16 +86,35 @@ async function dataDir(dir: string, files?: string[]) {
 					html(
 						"input id=s type=search hidden placeholder='Recherche simple'",
 					),
-					await Promise.all(files.map((f) => file(dir + "/" + f))),
+					await Promise.all(
+						files.map((f) => file(dir + "/" + f, csvData)),
+					),
 				),
 				FOOTER,
 				SEARCH,
 			),
 		).h,
 	);
+
+	await Deno.writeTextFile(
+		`public/${dir}.csv`,
+		CSV.stringify(csvData, {
+			columns: [
+				"path",
+				"page",
+				"folder",
+				"tags",
+				"title",
+				"text",
+			],
+		}),
+	);
 }
 
-async function file(path: string): Promise<CHILDREN[]> {
+async function file(
+	path: string,
+	csvData: CSV.DataItem[],
+): Promise<CHILDREN[]> {
 	const lines = (await Deno.readTextFile(path)).split(/\r?\n/);
 
 	const groups: string[][] = [[]];
@@ -107,8 +131,16 @@ async function file(path: string): Promise<CHILDREN[]> {
 			"h1 id=" + path,
 			path.replaceAll(/[^/]*\//g, "").replace(/\.txt$/, ""),
 		),
-		...groups.filter((x) => x.length).map(([head, title, ...subtitle]) => {
+		...groups.filter((x) => x.length).map(([head, title, ...text]) => {
 			const [page, folder, ...tags] = head.split(" ");
+			csvData.push({
+				path,
+				page,
+				folder,
+				tags: tags.join(";"),
+				title,
+				text: text.join("\n"),
+			});
 			return html(
 				"div.item id=" + path + "/" + folder,
 				html(
@@ -121,7 +153,7 @@ async function file(path: string): Promise<CHILDREN[]> {
 					...tags.map((tag) => [html("span.tag", "#", tag), " "]),
 				),
 				html("div.title", title),
-				subtitle.map((sub) => html("div.sub", sub)),
+				text.map((sub) => html("div.sub", sub)),
 			);
 		}),
 	];
