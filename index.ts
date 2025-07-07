@@ -1,6 +1,6 @@
 #!/usr/bin/env -S deno run --allow-write=public --allow-read=.
 
-import { walk } from "https://jsr.io/@std/fs/1.0.19/walk.ts";
+import { walk, WalkOptions } from "https://jsr.io/@std/fs/1.0.19/walk.ts";
 import { CHILDREN, html, minify } from "./html.ts";
 
 const STYLE = html("style", await minify("style.css"));
@@ -19,13 +19,14 @@ const FOOTER = html(
 	html("a href=https://github.com/jitroyes/pv", "[github]"),
 );
 
-const dirs = [
-	"data-troyes",
-];
+const dirs = await walkName(".", {
+	maxDepth: 1,
+	match: [/^data-/],
+});
 
 await Deno.mkdir("public", { recursive: true });
 await writeIndex();
-await Promise.all(dirs.map(dataDir));
+await Promise.all(dirs.map((dir) => dataDir(dir)));
 
 async function writeIndex() {
 	await Deno.writeTextFile(
@@ -57,12 +58,8 @@ async function writeIndex() {
 	);
 }
 
-async function dataDir(dir: string) {
-	const files = (await Array.fromAsync(walk(dir, {
-		includeDirs: false,
-		exts: [".txt"],
-	}))).map((entry) => entry.path);
-	console.log(files.join("\n") + "\n");
+async function dataDir(dir: string, files?: string[]) {
+	files ||= await walkName(dir, { exts: [".txt"] });
 
 	const title = dir.replace("data-", "PV de: ");
 	await Deno.writeTextFile(
@@ -84,7 +81,7 @@ async function dataDir(dir: string) {
 					html(
 						"input id=s type=search hidden placeholder='Recherche simple'",
 					),
-					await Promise.all(files.map((f) => file(f))),
+					await Promise.all(files.map((f) => file(dir + "/" + f))),
 				),
 				FOOTER,
 				SEARCH,
@@ -121,11 +118,18 @@ async function file(path: string): Promise<CHILDREN[]> {
 						"#",
 					),
 					` [dossier=${folder} | page=${page}] `,
-					tags.map((tag) => html("span.tag", "#", tag, " ")),
+					...tags.map((tag) => [html("span.tag", "#", tag), " "]),
 				),
 				html("div.title", title),
 				subtitle.map((sub) => html("div.sub", sub)),
 			);
 		}),
 	];
+}
+
+/** call walk() and return the results entry names. */
+async function walkName(root: string, options: WalkOptions): Promise<string[]> {
+	return (await Array.fromAsync(walk(root, options)))
+		.map((entry) => entry.name)
+		.sort();
 }

@@ -7,9 +7,6 @@ différentes décisions prises sur une thèmatique donnée.
 deno run --allow-write=public --allow-read=. index.ts
 ```
 
-Pour rajouter un répertoire de procès verbaux: créé un dossier commençant par
-`data-` puis ajouter dans la constante dirs dans le fichier `index.ts`.
-
 Les fichiers détaillant les procès verbaux sont dans le format de texte suivant:
 
 1. Une ligne d'information: page, code du dossier et des étiquettes le tout

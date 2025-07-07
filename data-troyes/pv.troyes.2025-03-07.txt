@@ -1,12 +1,12 @@
 1 00c eau
 POINT D'INFORMATION SUR LES ORIENTATIONS BUDGETAIRES 2025 DU SERVICE DES EAUX - COPE TERRITOIRE TROYES
 
-16 01 parking politique
+16 1 parking politique
 DESIGNATIONS DE REPRESENTANTS DE LA VILLE DE TROYES
 1/ Société Publique Locale Troyes Parc Auto
 2/ Commissions sectorielles (liste et composition)
 
-24 02 musée
+24 2 musée
 PÔLE MUSEAL
 Acceptation de depôts et dons d'œuvres au profit des musees municipaux (liste d'objet)
 
