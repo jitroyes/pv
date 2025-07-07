@@ -1,5 +1,6 @@
 body {
 	font-family: sans-serif;
+	font-size: large;
 }
 
 header {
@@ -19,17 +20,17 @@ main {
 	padding: 0;
 	list-style: "";
 	padding: 1ex;
-	color: #3885f4;
+	color: #0051C2;
 	border: dashed 2px;
 }
 
 a {
-	color: #3885f4;
+	color: #0051C2;
 }
 
 a:hover {
 	color: black;
-	background: #3885f4;
+	background: #0051C2;
 }
 
 #s {
@@ -54,7 +55,7 @@ div.item {
 }
 
 .tag {
-	color: #2e9959;
+	background: #2e9959;
 	font-weight: bold;
 }
 
