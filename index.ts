@@ -105,10 +105,8 @@ async function dataDir(dir: string, files?: string[]) {
 					),
 					html(
 						"div.tags",
-						tagsList.map((
-							t,
-						) => [
-							html("span.tag.item", `${t} (${tagsMap.get(t)})`),
+						tagsList.map((t) => [
+							html("span.tag.item", `${t}(${tagsMap.get(t)})`),
 							" ",
 						]),
 					),

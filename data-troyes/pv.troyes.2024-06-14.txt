@@ -9,7 +9,7 @@ d’Archéologie
 44 4 POLE:Culture POLE:Sports POLE:Animation_du_Territoire DIRECTION:Culture DIRECTION:Labels_et_Patrimoine DIRECTION:Vie_associative Conservatoire Partenariat Convention Subvention
 Conservatoire à Rayonnement Départemental Marcel Landowski - Partenariats 2024/2025
 De par son classement à rayonnement départemental, le Conservatoire Marcel Landowski s’est engagé à respecter des principes fondamentaux et des missions définies par le décret de décembre 2006.
-L’une de ces missions précise que le Conservatoire doit participer à des actions de sensibilisation, de diversification et de développement des publics en prenant part à la vie culturelle de son périmètre de rayonnement. 
+L’une de ces missions précise que le Conservatoire doit participer à des actions de sensibilisation, de diversification et de développement des publics en prenant part à la vie culturelle de son périmètre de rayonnement.
 De plus, l’accessibilité du Conservatoire et plus particulièrement son action culturelle doit être favorisée en tissant des liens forts avec des partenaires issus du milieu associatif local afin de proposer des actions ouvertes qui vont au-devant du public, hors de ses murs. C’est dans ce cadre que sont proposés les partenariats suivants.
 
 81 5 POLE:Culture POLE:Sports POLE:Animation_du_Territoire DIRECTION:Culture DIRECTION:Labels_et_Patrimoine DIRECTION:Vie_associative_Conservatoire Partenariat Subvention
@@ -20,7 +20,7 @@ Afin de soutenir l’investissement culturel des familles qui fréquentent assid
 |
 Ce fonds vise à octroyer un soutien aux élèves démontrant un véritable projet de pratique artistique.
 
-85 6 POLE!Famille_et_Proximité DIRECTION:Vie_quotidienne Jeunesse Numérique Social
+85 6 POLE:Famille_et_Proximité DIRECTION:Vie_quotidienne Jeunesse Numérique Social
 Renouvellement de la labellisation du Point Information Jeunesse
 Labellisé depuis 2009, le Point Information Jeunesse (PIJ) est un lieu d’information, d’écoute et de documentation en accès libre, ouvert à tous les jeunes âgés entre 16 et 25 ans, dans le respect de l’anonymat.
 |
