@@ -1,7 +1,6 @@
 #!/usr/bin/env -S deno run --allow-write=public --allow-read=.
 
 import * as CSV from "https://jsr.io/@std/csv/1.0.6/mod.ts";
-import { walk, WalkOptions } from "https://jsr.io/@std/fs/1.0.19/walk.ts";
 import { CHILDREN, html, minify } from "./html.ts";
 
 const STYLE = html("style", await minify("style.css"));
@@ -20,10 +19,7 @@ const FOOTER = html(
 	html("a href=https://github.com/jitroyes/pv", "[github]"),
 );
 
-const dirs = await walkName(".", {
-	maxDepth: 1,
-	match: [/^data-/],
-});
+const dirs = await walkName(".", /^data-/);
 
 await Deno.mkdir("public", { recursive: true });
 await writeIndex();
@@ -60,7 +56,7 @@ async function writeIndex() {
 }
 
 async function dataDir(dir: string, files?: string[]) {
-	files ||= await walkName(dir, { exts: [".txt"] });
+	files ||= await walkName(dir, /\.txt$/);
 
 	const csvData: CSV.DataItem[] = [];
 
@@ -87,7 +83,7 @@ async function dataDir(dir: string, files?: string[]) {
 						"input id=s type=search hidden placeholder='Recherche simple'",
 					),
 					await Promise.all(
-						files.map((f) => file(dir + "/" + f, csvData)),
+						files.map((f) => file(dir, f, csvData)),
 					),
 				),
 				FOOTER,
@@ -112,9 +108,11 @@ async function dataDir(dir: string, files?: string[]) {
 }
 
 async function file(
-	path: string,
+	dir: string,
+	name: string,
 	csvData: CSV.DataItem[],
 ): Promise<CHILDREN[]> {
+	const path = dir + "/" + name;
 	const lines = (await Deno.readTextFile(path)).split(/\r?\n/);
 
 	const groups: string[][] = [[]];
@@ -127,10 +125,7 @@ async function file(
 	}
 
 	return [
-		html(
-			"h1 id=" + path,
-			path.replaceAll(/[^/]*\//g, "").replace(/\.txt$/, ""),
-		),
+		html("h1 id=" + name, name.replace(/\.txt$/, "")),
 		...groups.filter((x) => x.length).map(([head, title, ...text]) => {
 			const [page, folder, ...tags] = head.split(" ");
 			csvData.push({
@@ -142,26 +137,27 @@ async function file(
 				text: text.join("\n"),
 			});
 			return html(
-				"div.item id=" + path + "/" + folder,
+				`div.item id=${path}/${folder}`,
 				html(
 					"div.meta",
 					html(
-						"a.id href=#" + path + "/" + folder,
+						`a.id href=#${path}/${folder}`,
 						"#",
 					),
 					` [dossier=${folder} | page=${page}] `,
 					...tags.map((tag) => [html("span.tag", "#", tag), " "]),
 				),
 				html("div.title", title),
-				text.map((sub) => html("div.sub", sub)),
+				text.map((text) => html("p", text)),
 			);
 		}),
 	];
 }
 
 /** call walk() and return the results entry names. */
-async function walkName(root: string, options: WalkOptions): Promise<string[]> {
-	return (await Array.fromAsync(walk(root, options)))
+async function walkName(root: string, match: RegExp): Promise<string[]> {
+	return (await Array.fromAsync(Deno.readDir(root)))
 		.map((entry) => entry.name)
+		.filter((name) => match.test(name))
 		.sort();
 }

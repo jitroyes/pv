@@ -63,6 +63,11 @@ div.title {
 	font-weight: bold;
 }
 
+p {
+	margin: 0;
+	white-space: pre-wrap;
+}
+
 footer {
 	margin-top: 2ex;
 	font-style: italic;
