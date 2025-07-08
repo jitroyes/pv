@@ -30,7 +30,15 @@ async function writeIndex() {
 		"public/index.html",
 		"<!DOCTYPE html>" + html(
 			"html lang=fr",
-			html("head", html("title", "Tous les dossiers"), STYLE),
+			html(
+				"head",
+				html(`meta charset=utf-8`),
+				html(
+					`meta name=viewport content="width=device-width,initial-scale=1"`,
+				),
+				html("title", "Tous les dossiers"),
+				STYLE,
+			),
 			html(
 				"body",
 				html("header", "Tous les dossiers"),
@@ -59,13 +67,26 @@ async function dataDir(dir: string, files?: string[]) {
 	files ||= await walkName(dir, /\.txt$/);
 
 	const csvData: CSV.DataItem[] = [];
+	const tagsMap = new Map<string, number>();
+	const items = await Promise.all(
+		files.map((f) => file(dir, f, csvData, tagsMap)),
+	);
+	const tagsList = Array.from(tagsMap.keys()).sort();
 
 	const title = dir.replace("data-", "PV de: ");
 	await Deno.writeTextFile(
 		`public/${dir}.html`,
 		"<!DOCTYPE html>" + html(
 			"html lang=fr",
-			html("head", html("title", title), STYLE),
+			html(
+				"head",
+				html(`meta charset=utf-8`),
+				html(
+					`meta name=viewport content="width=device-width,initial-scale=1"`,
+				),
+				html("title", title),
+				STYLE,
+			),
 			html(
 				"body",
 				html("header", title),
@@ -82,9 +103,16 @@ async function dataDir(dir: string, files?: string[]) {
 					html(
 						"input id=s type=search hidden placeholder='Recherche simple'",
 					),
-					await Promise.all(
-						files.map((f) => file(dir, f, csvData)),
+					html(
+						"div.tags",
+						tagsList.map((
+							t,
+						) => [
+							html("span.tag.item", `${t} (${tagsMap.get(t)})`),
+							" ",
+						]),
 					),
+					items,
 				),
 				FOOTER,
 				SEARCH,
@@ -111,6 +139,7 @@ async function file(
 	dir: string,
 	name: string,
 	csvData: CSV.DataItem[],
+	tagsMap: Map<string, number>,
 ): Promise<CHILDREN[]> {
 	const path = dir + "/" + name;
 	const lines = (await Deno.readTextFile(path)).split(/\r?\n/);
@@ -136,6 +165,9 @@ async function file(
 				title,
 				text: text.join("\n"),
 			});
+			for (const tag of tags) {
+				tagsMap.set(tag, (tagsMap.get(tag) ?? 0) + 1);
+			}
 			return html(
 				`div.item id=${path}/${folder}`,
 				html(

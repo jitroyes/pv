@@ -41,6 +41,10 @@ a:hover {
 	box-sizing: border-box;
 }
 
+div.tags {
+	line-height: 150%;
+}
+
 h1 {
 	text-align: center;
 	background: #2e9959;
