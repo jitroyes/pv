@@ -1,15 +1,16 @@
 28 3 POLE:Culture POLE:Sports POLE:Animation_du_Territoire DIRECTION:Culture DIRECTION:Labels_et_Patrimoine DIRECTION:Vie_associative Musée Partenariat
 Pôle Muséal
-1- Partenariat avec le Cinéma CGR
-2- Partenariat avec la Commune d’Essoyes
-3- Partenariat avec Troyes Champagne Métropole - Clés de Troyes 2024
-4- Acceptation de don d’œuvre au profit du Musée des Beaux-Arts et
+1. Partenariat avec le Cinéma CGR
+2. Partenariat avec la Commune d’Essoyes
+3. Partenariat avec Troyes Champagne Métropole - Clés de Troyes 2024
+4. Acceptation de don d’œuvre au profit du Musée des Beaux-Arts et
 d’Archéologie
 
 44 4 POLE:Culture POLE:Sports POLE:Animation_du_Territoire DIRECTION:Culture DIRECTION:Labels_et_Patrimoine DIRECTION:Vie_associative Conservatoire Partenariat Convention Subvention
 Conservatoire à Rayonnement Départemental Marcel Landowski - Partenariats 2024/2025
 De par son classement à rayonnement départemental, le Conservatoire Marcel Landowski s’est engagé à respecter des principes fondamentaux et des missions définies par le décret de décembre 2006.
-L’une de ces missions précise que le Conservatoire doit participer à des actions de sensibilisation, de diversification et de développement des publics en prenant part à la vie culturelle de son périmètre de rayonnement. De plus, l’accessibilité du Conservatoire et plus particulièrement son action culturelle doit être favorisée en tissant des liens forts avec des partenaires issus du milieu associatif local afin de proposer des actions ouvertes qui vont au-devant du public, hors de ses murs. C’est dans ce cadre que sont proposés les partenariats suivants.
+L’une de ces missions précise que le Conservatoire doit participer à des actions de sensibilisation, de diversification et de développement des publics en prenant part à la vie culturelle de son périmètre de rayonnement. 
+De plus, l’accessibilité du Conservatoire et plus particulièrement son action culturelle doit être favorisée en tissant des liens forts avec des partenaires issus du milieu associatif local afin de proposer des actions ouvertes qui vont au-devant du public, hors de ses murs. C’est dans ce cadre que sont proposés les partenariats suivants.
 
 81 5 POLE:Culture POLE:Sports POLE:Animation_du_Territoire DIRECTION:Culture DIRECTION:Labels_et_Patrimoine DIRECTION:Vie_associative_Conservatoire Partenariat Subvention
 Conservatoire à Rayonnement Départemental Marcel Landowski
@@ -81,9 +82,8 @@ Par un bail à construction conclu le 30 octobre 1973, la Ville de Troyes a mis 
 
 227 19 PÔLE:Urbanisme POLE:Patrimoine POLE:Espaces_Publics DIRECTION:Urbanisme DIRECTION:Développement_urbain Subvention Immobilier Restauration
 Secteur Sauvegardé - Subventions pour restaurations immobilières – Programme 2024
-A/ Dans le cadre de l’Aide à la restauration des immeubles en centre ancien de la Ville de Troyes, sur le Fonds Ville de Troyes mis en œuvre à cet effet, le Conseil municipal est appelé à se prononcer sur l’attribution d’une subvention accordée au propriétaire ci-après désigné.
-|
-B/ Dans le cadre de l’Opération Programmée d’Amélioration de l’Habitat et de Renouvellement Urbain du Bouchon de Champagne de la Ville de Troyes, selon les conventions passées entre la Région Grand Est, le Conseil départemental de l’Aube et la Ville de Troyes, et sur les Fonds Communs Région Grand Est - Ville de Troyes (n°1), Conseil départemental de l’Aube – Ville de Troyes (n°2) et le Fonds d’Intervention Communal (n°3), mis en œuvre à cet effet, le Conseil municipal est appelé à se prononcer sur l’attribution de subventions accordées aux propriétaires ci-après désignés.
+1. Dans le cadre de l’Aide à la restauration des immeubles en centre ancien de la Ville de Troyes, sur le Fonds Ville de Troyes mis en œuvre à cet effet, le Conseil municipal est appelé à se prononcer sur l’attribution d’une subvention accordée au propriétaire ci-après désigné.
+2. Dans le cadre de l’Opération Programmée d’Amélioration de l’Habitat et de Renouvellement Urbain du Bouchon de Champagne de la Ville de Troyes, selon les conventions passées entre la Région Grand Est, le Conseil départemental de l’Aube et la Ville de Troyes, et sur les Fonds Communs Région Grand Est - Ville de Troyes (n°1), Conseil départemental de l’Aube – Ville de Troyes (n°2) et le Fonds d’Intervention Communal (n°3), mis en œuvre à cet effet, le Conseil municipal est appelé à se prononcer sur l’attribution de subventions accordées aux propriétaires ci-après désignés.
 
 232 20 PÔLE:Urbanisme POLE:Patrimoine POLE:Espaces_Publics DIRECTION:Urbanisme DIRECTION:Développement_urbain Droit-de-Préemption-Urbain-Renforcé PLU
 Mise à jour du Droit de Préemption Renforcé (DPUR) sur le territoire de la Ville de Troyes
@@ -114,22 +114,22 @@ Le SPASER s’inscrit dans la continuité de ces deux premiers actes. Il traduit
 
 344 25 POLE:Sécurité_Juridique DIRECTION:Commande_publique DIRECTION:Achats_transversaux Commande-publique Marché-publique Accord-cadre TCM
 Groupements de commandes - Constitution et avenants
-    - « Prestations relatives à la réalisation de contrôles techniques, de contrôles de limiteurs de vitesse et de chronotachygraphes des véhicules pour la Ville de Troyes et Troyes Champagne Métropole »
-    - « Achat de vêtements de travail, de tenues de travail, de chaussures de travail et des équipements de protection individualisés pour les besoins de Troyes Champagne Métropole, la Ville de Troyes et le CMAS de Troyes".
-    - « Prestations d’assurances pour les besoins de la Ville de Troyes et du CMAS de Troyes".
-    - « Achat de produits d’entretien et de consommables pour la Ville de Troyes et le Centre Municipal d’Action Sociale de Troyes ».
-    - « Accord-cadre relatif à l’acheminement et la distribution des courriers et colis en France, DOM COM et International pour la Ville de Troyes et Troyes Champagne Métropole ».
+1. Prestations relatives à la réalisation de contrôles techniques, de contrôles de limiteurs de vitesse et de chronotachygraphes des véhicules pour la Ville de Troyes et Troyes Champagne Métropole
+2. Achat de vêtements de travail, de tenues de travail, de chaussures de travail et des équipements de protection individualisés pour les besoins de Troyes Champagne Métropole, la Ville de Troyes et le CMAS de Troyes
+3. Prestations d’assurances pour les besoins de la Ville de Troyes et du CMAS de Troyes
+4. Achat de produits d’entretien et de consommables pour la Ville de Troyes et le Centre Municipal d’Action Sociale de Troyes
+5. Accord-cadre relatif à l’acheminement et la distribution des courriers et colis en France, DOM COM et International pour la Ville de Troyes et Troyes Champagne Métropole
 
 411 26 POLE:Sécurité_Juridique DIRECTION:Commande_publique DIRECTION:Achats_transversaux
 Marchés Publics formalisés - Autorisation préalable de lancement de consultations
-    - Gestion d’une fourrière et capture des chats errants sur Troyes
-    - Acquisition d’une laveuse électrique 2m 3
+1. Gestion d’une fourrière et capture des chats errants sur Troyes
+2. Acquisition d’une laveuse électrique 2m 3
 
 415 27 POLE:Sécurité_Juridique DIRECTION:Commande_publique DIRECTION:Achats_transversaux Energie Ecologie
 Marchés Publics formalisés - Avenants
-    - exploitation des installations thermiques des bâtiments communaux
-    - travaux de maintenance courante et de renovation dans les batiments et equipements pour la ville de troyes, troyes champagne metropole et le cmas de troyes
-    - fourniture, pose et mise en service d’horodateurs pour la gestion du stationnement payant sur voirie
+1. Exploitation des installations thermiques des bâtiments communaux
+2. Travaux de maintenance courante et de renovation dans les batiments et equipements pour la ville de troyes, troyes champagne metropole et le cmas de troyes
+3. Fourniture, pose et mise en service d’horodateurs pour la gestion du stationnement payant sur voirie
 
 446 28 POLE:Famille_et_Proximité DIRECTION:Vie_quotidienne Quartiers_2030 Consultation TCM
 Elaboration du Contrat de Ville « Engagement quartiers 2030 »
@@ -159,11 +159,11 @@ Attribution d’aides de minimis en faveur de l’immobilier commercial La volon
 
 544 33 POLE:Sécurité_Juridique SERVICE:Assemblées Associations Subventions Ecologie Culture
 Vie associative locale - Attributions de subventions :
-A/ CULTURE
-    1- Chorale l’Aubade
-    2- Centre Culturel International Rachi et Maison des Jeunes de Troyes
-B/ TRANSITION ECOLOGIQUE, ESPACES PAYSAGERS
-    - Centre d’Initiation à l’Environnement d’Othe et d’Armance (CIEOA)
+1. CULTURE
+1.1 Chorale l’Aubade
+1.2 Centre Culturel International Rachi et Maison des Jeunes de Troyes
+2. Transition ecologique, espaces paysagers
+2.1 Centre d’Initiation à l’Environnement d’Othe et d’Armance (CIEOA)
 
 551 34 POLE:Urbanisme POLE:Patrimoine POLE:Espaces_publics DIRECTION:GEMAPI Voirie Conventions Infrastucture Inondations
 Intégration de remblais routiers au système d’endiguement
@@ -185,9 +185,9 @@ Il convient donc d’approuver la nouvelle répartition du capital social de la 
 
 675 37 POLE:Ressources DIRECTION:Ressources_Humaines Vacataires
 Personnel municipal – Mesures diverses
-I – Actualisation du tableau des effectifs : création(s) et/ou suppression(s) de poste(s)
-II – Deux conventions de mise à disposition individuelle
-III – Modalités d’emploi des personnels vacataires intervenant au titre de prestations ponctuelles pour le compte de la Ville de Troyes
+1. Actualisation du tableau des effectifs : création(s) et/ou suppression(s) de poste(s)
+2. Deux conventions de mise à disposition individuelle
+3. Modalités d’emploi des personnels vacataires intervenant au titre de prestations ponctuelles pour le compte de la Ville de Troyes
 
 686 38 POLE:Sécurité_Juridique SERVICE:Assemblées Stationnement Régie Musée Maintenance batiments Jeunesse Marché-Publique
 Compte rendu des décisions et marchés publics passés en procédure adaptée
